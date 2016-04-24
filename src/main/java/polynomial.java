@@ -111,7 +111,7 @@ public class polynomial {
 		String polynomial = new String(); // Creates a String name polynomial
 		
 		for (int i = 0; i <polynomials.size();i++){ // loops through element of the polynomial arraylist
-			polynomial += "p"+ ++i +"(X)="; //adds pi(x) to string 
+			polynomial += "p"+ ++i +"(X) = "; //adds pi(x) to string 
 			--i;
 			for (int k = 0; k<polynomials.get(i).size(); k++){ // loops through the inner arrayList of each element
 				polynomial += polynomials.get(i).get(k).toString(); //covert each term to a string and adds the string to the polynomial string
