@@ -14,21 +14,33 @@ public class driver {
 		
 		System.out.print("Polynomials: \n" + poly.toString());
 		
-		System.out.print("inserted '3x^9' into the p2(x) polynomial: \n");
+		System.out.print("inserted '3x^6' into the p2(x) polynomial: \n");
 		
-		poly.insert("3", "9",1);
+		poly.insert("3", "6",1);
 		
-		System.out.print(poly.toString());
+		System.out.print("Polynomials: \n "+ poly.toString());
 		
 		System.out.print("reversed the p3(x) polynomial: \n");
 		
 		poly.reverse(2);
 		
-		System.out.print(poly.toString());
+		System.out.print("Polynomials: \n "+ poly.toString());
 		
-		System.out.print("deleted '-7x^9' from the p1(x) polynomial: \n");
+		System.out.print("deleted '6x^2' from the p1(x) polynomial: \n");
 		
 		poly.delete("6","2",0);
+		
+		System.out.print("Polynomials: \n "+ poly.toString());
+		
+		System.out.print("reversed the p3(x) polynomial: \n");
+		
+		poly.reverse(2);
+		
+		System.out.print("Polynomials: \n "+ poly.toString());
+		
+		System.out.print("inserted '-6x^2' into the p3(x) polynomial: \n");
+		
+		poly.insert("-6", "2",2);
 		
 		System.out.print("Polynomials: \n "+ poly.toString());
 	}

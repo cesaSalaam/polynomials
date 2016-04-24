@@ -174,10 +174,12 @@ public class polynomial {
 				coe = temp[1];  //resets the coe to new element in temp without the minus sign.
 				tempTerm.setCoe(Integer.valueOf(coe)); // changes the coefficient of the tempTerm
 				polynomials.get(polynomialNum).add(tempTerm); // adding the term to the correct polynomial
+				polynomials.set(polynomialNum,sortPoly(polynomials.get(polynomialNum)));
 				
 			}else{
 				tempTerm.setSign(true); // sets the sign to true(positive)
 				polynomials.get(polynomialNum).add(tempTerm); // adding the term to the correct polynomial
+				polynomials.set(polynomialNum,sortPoly(polynomials.get(polynomialNum)));
 			}
 		} 
 		else{
