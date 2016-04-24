@@ -12,14 +12,18 @@ import java.util.*;
 
 public class polynomial {
 	
-	private ArrayList<ArrayList<Term>> polynomials = new ArrayList<ArrayList<Term>>(); //This data member is used to store the polynomials. It is a 2D array list. The inner array list holds the polynomials.
+	private ArrayList<ArrayList<Term>> polynomials; //This data member is used to store the polynomials. It is a 2D array list. The inner array list holds the polynomials.
 	
-	private ArrayList<Term> poly = new ArrayList<Term>(); //This data member is used to the terms of the polynomial.
+	private ArrayList<Term> poly; //This data member is used to the terms of the polynomial.
 	
 	private String[] tokens; //This is used to store each line of the polynomials.txt file.
 	
 	
-	public polynomial() {} //Class constructor
+	public polynomial() {
+		poly = new ArrayList<Term>();
+		polynomials = new ArrayList<ArrayList<Term>>(); 
+		
+	} //Class constructor
 	
 	
 	public void readPolynomialsFromText(){ 
